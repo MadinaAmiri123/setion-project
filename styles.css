@@ -1,0 +1,537 @@
+/* .first{
+  text-align: center;
+  
+
+} 
+
+#btns{
+    display: flex;
+    gap: 500px;
+    border-radius: 12px;
+   justify-content: center;
+   margin-top: 100px;
+   padding: 8px
+
+ 
+
+ }
+ .card1{
+    background-color: rgb(250, 246, 246);
+    width: 200px;
+    height: 370px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+ }
+ .card1 img{
+    width: 100%;
+    height: 200;
+
+
+ }
+ .flex{
+     display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 12px;
+
+    font-size: 10px;
+
+    color: #657b91;
+ }
+ .card2{
+    margin-top: 20px;
+ }
+ .mentor-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+ } */
+
+
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f6fc;
+    color: #102a43;
+}
+
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+.mentor-section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 35px 20px 60px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #102a43;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #71869d;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-bar input {
+    width: 188px;
+    height: 35px;
+
+    padding: 0 14px;
+
+    background: white;
+
+    border: 1px solid #c8d5e3;
+    border-radius: 5px;
+
+    outline: none;
+
+    font-size: 12px;
+}
+
+.top-bar input::placeholder {
+    color: #71869d;
+}
+
+
+/* =========================
+   EXPLORE BUTTON
+========================= */
+
+.explore-btn {
+    background: #7547f5;
+    color: white;
+
+    border: 2px solid #7547f5;
+
+    padding: 9px 18px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.explore-btn:hover {
+    background: #6337d8;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.mentor-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: white;
+
+    border: 1px solid #dce5ee;
+
+    border-radius: 10px;
+
+    padding: 13px;
+
+    min-width: 0;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.image-box {
+    position: relative;
+
+    width: 100%;
+    height: 230px;
+
+    overflow: hidden;
+
+    border-radius: 9px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   NEW MENTOR
+========================= */
+
+.new-mentor {
+    position: absolute;
+
+    left: 12px;
+    bottom: 12px;
+
+    background: #20a76b;
+
+    color: white;
+
+    padding: 5px 9px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   NAME
+========================= */
+
+.card h2 {
+    margin-top: 14px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #102a43;
+}
+
+
+/* =========================
+   GREEN VERIFIED ICON
+========================= */
+
+.verified {
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 14px;
+    height: 14px;
+
+    margin-left: 3px;
+
+    background: #28a86b;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 9px;
+    font-weight: bold;
+
+    vertical-align: middle;
+}
+
+
+/* =========================
+   JOB
+========================= */
+
+.job {
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    color: #526b84;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 12px;
+
+    font-size: 10px;
+
+    color: #657b91;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   RATING
+========================= */
+
+.rating {
+    margin-left: auto;
+}
+
+.rating::first-letter {
+    color: #f5a400;
+}
+
+
+/* =========================
+   CARD BOTTOM
+========================= */
+
+.card-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price p {
+    font-size: 11px;
+
+    color: #71869d;
+
+    margin-bottom: 3px;
+}
+
+.price strong {
+    font-size: 14px;
+
+    color: #102a43;
+
+    white-space: nowrap;
+}
+
+.price small {
+    font-size: 10px;
+
+    font-weight: normal;
+
+    color: #657b91;
+}
+
+
+/* =========================
+   BOOK BUTTON
+========================= */
+
+.book-btn {
+    background: white;
+
+    color: #526b84;
+
+    border: 2px solid #8a9bb5;
+
+    padding: 9px 14px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.book-btn:hover {
+    background: #f4f7fb;
+}
+
+
+/* =========================
+   FREE TRIAL BUTTON
+========================= */
+
+.trial-btn {
+    background: white;
+
+    color: #7547f5;
+
+    border: 2px solid #7547f5;
+
+    padding: 9px 13px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.trial-btn:hover {
+    background: #f5f1ff;
+}
+
+
+/* =========================
+   TABLET
+   2 COLUMNS
+========================= */
+
+@media (max-width: 950px) {
+
+    .mentor-section {
+        max-width: 750px;
+    }
+
+    .mentor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   1 COLUMN
+========================= */
+
+@media (max-width: 600px) {
+
+    .mentor-section {
+        width: 100%;
+        padding: 25px 15px 40px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .header p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .top-bar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    .top-bar input {
+        width: 100%;
+    }
+
+    .explore-btn {
+        width: 100%;
+    }
+
+    .mentor-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .image-box {
+        height: 280px;
+    }
+
+    .details {
+        font-size: 10px;
+    }
+
+    .card-bottom {
+        margin-top: 18px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONE
+========================= */
+
+@media (max-width: 400px) {
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .image-box {
+        height: 240px;
+    }
+
+    .card-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .book-btn,
+    .trial-btn {
+        width: 100%;
+    }
+
+}
+ 
+ 
+
+
+
+
+ 
